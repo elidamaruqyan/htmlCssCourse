@@ -1,0 +1,47 @@
+section {
+    background: green;
+}
+
+#hero-section {
+    background: gray !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section > div {
+    color: green;
+}
+
+section div {
+    background: aliceblue;
+}
+
+/*section ~ p {*/
+/*    background: red;*/
+/*}*/
+
+/*section + p {*/
+/*    background: blue;*/
+/*}*/
+
+.select {
+    background: yellow;
+}
+
+a:hover {
+    color: yellow;
+}
+
+p::first-line {
+    font-size: 24px;
+}
+
+p::first-letter {
+    font-size: 50px;
+}
+
+p::before {
+
+}

@@ -1,0 +1,138 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Lesson 7 / Css Selectors </title>
+    <!--    <link rel="stylesheet" href="styles/main.css">-->
+    <style>
+        .block {
+            background: lightgray;
+        }
+
+        h1, p, div, section, main {
+
+        }
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div style="width: 50%">
+    <!--    Block and Inline -->
+    <h1 class="block">Lorem ipsum dolor <em style="background: red">test</em>
+        sit amet, consectetur adipisicing elit. Ab accusantium alias aliquam doloribus
+        enim error exercitationem fugiat illo in incidunt laborum, nostrum odit quaerat quibusdam quod, sed soluta,
+        tempora. Doloremque.
+    </h1>
+
+    <!-- Inline Block -->
+    <button style="background: lightblue; padding: 20px; margin: 12px">
+        Learn More
+    </button>
+    <button style="background: lightblue; padding: 20px; margin: 12px">
+        Learn More
+    </button>
+    <p style="display: none">
+        lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium alias aliquam
+    </p>
+    <p style="visibility: hidden">
+        lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium alias aliquam
+    </p>
+</div>
+
+<!-- Default direction Row -->
+<!-- Flex container, items get inline width -->
+<!--<section style="display: flex">-->
+<!--    <div style="width: 50%; background: antiquewhite">-->
+<!--        <h1>Lorem ipsum dolor <em style="background: red">test</em></h1>-->
+<!--    </div>-->
+<!--    <div style="background: azure">-->
+<!--        <img src="http://placekitten.com/200/300">-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- Flex Container with equal child width -->
+<!--<section style="display: flex">-->
+<!--    <div style="flex: 1; background: aliceblue">-->
+<!--        <h1>Lorem ipsum dolor <em style="background: red">test</em></h1>-->
+<!--    </div>-->
+<!--    <div style="flex: 1; background: bisque">-->
+<!--        <img src="http://placekitten.com/200/300">-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--Direction Column -->
+<!--<section style="display: flex; flex-direction: column; height: 250px">-->
+<!--    <div style="flex: 1; background: purple">-->
+<!--        <h1>Lorem ipsum dolor <em style="background: red">test</em></h1>-->
+<!--    </div>-->
+<!--    <div style="flex: 1; background: red">-->
+<!--        <img src="http://placekitten.com/200/300">-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- Grid -->
+<section style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 20px 50px 20px 60px">
+    <div style="background: burlywood">
+        <h1>Lorem ipsum dolor <em style="background: red">test</em></h1>
+    </div>
+    <div style="background: cornsilk">
+        <img src="http://placekitten.com/200/300">
+    </div>
+    <div style="background: burlywood">
+        <h1>Lorem ipsum dolor <em style="background: red">test</em></h1>
+    </div>
+    <div style="background: cornsilk">
+        <img src="http://placekitten.com/200/300">
+    </div>
+    <div style="background: burlywood">
+        <h1>Lorem ipsum dolor <em style="background: red">test</em></h1>
+    </div>
+    <div style="background: cornsilk">
+        <img src="http://placekitten.com/200/300">
+    </div>
+    <div style="background: burlywood">
+        <h1>Lorem ipsum dolor <em style="background: red">test</em></h1>
+    </div>
+    <div style="background: cornsilk">
+        <img src="http://placekitten.com/200/300">
+    </div>
+    <div style="background: burlywood">
+        <h1>Lorem ipsum dolor <em style="background: red">test</em></h1>
+    </div>
+    <div style="background: cornsilk">
+        <img src="http://placekitten.com/200/300">
+    </div>
+</section>
+
+
+<!--Box Model Content Box-->
+<div style="
+width: 100px;
+height: 50px;
+background: #a987b5;
+padding: 50px;
+margin: 20px;
+border: 10px solid #747484;
+box-sizing: border-box;
+">
+    text
+</div>
+<div style="
+width: 100px;
+height: 50px;
+background: #76768a;
+padding: 50px;
+margin: 20px;
+border: 10px solid #747484;
+box-sizing: content-box;
+">
+    text
+</div>
+<!--Box Model Border Box-->
+</body>
+</html>

@@ -1,0 +1,28 @@
+.nav {
+  &__item {
+    &--active {
+
+    }
+  }
+
+  &__item2 {
+  }
+}
+
+.nav .nav__item.nav__item--active {
+
+}
+
+.nav {
+}
+
+.nav .nav__item {
+}
+
+.nav .nav__item.nav__item--active {
+}
+
+@media screen {
+  .nav .nav__item.nav__item--active {
+  }
+}

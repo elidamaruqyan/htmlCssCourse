@@ -1,0 +1,131 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Lesson 7 / Css Selectors </title>
+    <style>
+        .hero-section {
+            background: red;
+        }
+
+        #hero-section {
+            background: blue !important;
+        }
+
+        li:first-child {
+            background: yellow;
+        }
+
+        li:last-child {}
+
+        li:nth-child(2n) {
+            background: green;
+        }
+
+        li:nth-child(odd) {
+            color: #777;
+        }
+
+        li:nth-child(even) {
+            color: blue;
+        }
+
+        * {
+            background: lightgray;
+        }
+
+        .hero-section::selection {
+            background: yellow;
+        }
+
+        li::marker {
+            background: green;
+        }
+
+        input::placeholder {}
+
+        input:checked{}
+
+        [alt] {
+            color: red;
+        }
+
+        [alt="name"] {
+            color: purple;
+        }
+        a[target="_blank"] {}
+        [alt^="m"] {}
+        [alt$="name"] {}
+        [alt~="name"] {}
+
+    </style>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<h1 style="color: red"></h1>
+
+<!-- First Section/ Section for Hero Banner -->
+<section class="hero-section" id="hero-section">
+    test
+    <div>
+        <h2>test</h2>
+        <article>
+            <p>
+                test Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, cupiditate dolorem ducimus et
+                ex exercitationem explicabo facere illum ipsum itaque laudantium mollitia nesciunt obcaecati possimus
+                quisquam quo unde vero.
+            </p>
+            <a href="#test"> test</a>
+        </article>
+    </div>
+</section>
+<img src="test" alt="name">
+<p>
+    lorem ipsum
+</p>
+<div>
+    test
+</div>
+<p>
+    lorem
+</p>
+<p>
+    test
+</p>
+
+<ul>
+    <li> list info</li>
+    <li> list info</li>
+    <li> list info</li>
+    <li> list info</li>
+    <li> list info</li>
+</ul>
+
+<!--BEM -->
+<ul class="list">
+    <li class="list__item list__item--disabled"></li>
+    <li class="list__item list__item_disabled"></li>
+    <li class="list__item"></li>
+</ul>
+
+<nav>
+    <ul class="menu">
+        <li class="menu__item1">
+            Menu Item
+            <div class="menu__nested-item nestedItem">nested item</div>
+            <div class="menu__item2"></div>
+            <div class="price">
+                <p class="price__label"></p>
+            </div>
+        </li>
+        <li class="menu__item">Menu Item</li>
+        <li class="menu__item menu__item--active">Menu Item</li>
+    </ul>
+</nav>
+
+</body>
+</html>
