@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/3ad96045dd.js" crossorigin="anonymous"></script>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-content: flex-start;
+            height: 100px;
+            background: lightcoral;
+            /*flex-direction: row; !* Default *!*/
+            /*flex-direction: row-reverse; */
+            /*flex-direction: row;*/
+            /*flex-direction: column-reverse;*/
+            /*flex-wrap: wrap; !* nowrap, wrap-reverse *!*/
+            /*flex-flow: row wrap;*/
+            /*justify-content: center; !* center, flex-start, flex-end, space-between, space-around, space-evenly *!*/
+            /*align-items: stretch;*/
+            /*align-content: space-evenly;*/
+            grid-gap: 24px;
+        }
+
+        .button-wrapper {
+            /*align-self: center;*/
+            /*order: 1;*/
+            border: 0;
+            background: lightblue;
+            /*height: 64px;*/
+            /*width: 100px;*/
+            /*margin: 20px auto;*/
+            border-radius: 10px;
+            /*position: fixed;*/
+            /*top: 50%;*/
+            /*left: 50%;*/
+            /*transform: translate(-50%, -50%);*/
+            flex: 1 1 auto; /* grow shrink basis*/
+        }
+
+        i {
+            font-size: 25px;
+        }
+
+        .button-spc {
+            align-self: center;
+        }
+
+        .btn1 {
+            /*flex-grow: 1;*/
+            /*flex-shrink: 1;*/
+            /*flex-basis: 250px;*/
+        }
+        .btn2 {
+            /*flex-grow: 2;*/
+            /*flex-shrink: 2;*/
+            /*flex-basis: 250px;*/
+        }
+        .btn3 {
+            /*flex-grow: 5;*/
+            /*flex-shrink: 0.5;*/
+            /*flex-basis: 250px;*/
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda enim iusto magni, nihil quod vitae. Explicabo
+        illum inventore maxime. Aliquid quae qui quidem totam voluptatibus! Aspernatur dicta reiciendis tempore
+        voluptas!</p>
+    <div class="flex-container">
+        <button class="button-wrapper btn1">
+            <i class="fa-solid fa-house"></i>
+            button 1
+        </button>
+        <button class="button-wrapper btn2">
+            <i class="fa-solid fa-house"></i>
+            button 2
+        </button>
+        <button class="button-wrapper btn3">
+            <i class="fa-solid fa-house"></i>
+            button 3
+        </button>
+        <!--        <button class="button-wrapper">-->
+        <!--            <i class="fa-solid fa-house"></i>-->
+        <!--            button 4-->
+        <!--        </button>-->
+        <!--        <button class="button-wrapper">-->
+        <!--            <i class="fa-solid fa-house"></i>-->
+        <!--            button 5-->
+        <!--        </button>-->
+        <!--        <button class="button-wrapper button-spc">-->
+        <!--            <i class="fa-solid fa-house"></i>-->
+        <!--            button 6-->
+        <!--        </button>-->
+        <!--        <button class="button-wrapper">-->
+        <!--            <i class="fa-solid fa-house"></i>-->
+        <!--            button 7-->
+        <!--        </button>-->
+    </div>
+</div>
+
+</body>
+</html>
