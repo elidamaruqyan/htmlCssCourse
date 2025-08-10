@@ -1,0 +1,142 @@
+:root {
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Courgette', sans-serif;
+    --primary-color: #ffffff;
+    --secondary-color: #ec1d25;
+    --transition: 800ms;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary), sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Flex */
+.flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-fill {
+    flex: 1;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.primary-btn {
+    padding: 16px 32px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.primary-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-top: 4px solid var(--secondary-color);
+    padding: 2rem 1rem;
+}
+
+.nav-link {
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.burger-menu {
+    width: 32px;
+    height: 16px;
+    border-block: 2px solid var(--primary-color);
+    border-inline: unset;
+    outline: 0;
+    box-shadow: unset;
+    background: unset;
+    transition: var(--transition);
+}
+
+.burger-menu:hover {
+    border-color: var(--secondary-color);
+}
+
+/*Hero Section*/
+.hero-section {
+    position: fixed;
+    inset: 0;
+    background: url('../classwork/assets/banner.webp') no-repeat fixed center;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-family: var(--font-secondary), serif;
+}

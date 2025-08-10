@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Lesson 12 / Css bg and Z index </title>
+    <style>
+        /*.parent {*/
+        /*    border: 1px solid red;*/
+        /*    position: relative; !* all positions (ex. static), flex, grid*!*/
+        /*}*/
+
+        /*.child1 {*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    position: absolute;*/
+        /*    z-index: 1;*/
+        /*    background: lightcoral;*/
+        /*}*/
+        /*.child2 {*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    position: absolute;*/
+        /*    z-index: 2;*/
+        /*    background: lightgreen;*/
+        /*}*/
+        /*.child3 {*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    position: absolute;*/
+        /*    z-index: 3;*/
+        /*    background: lightcyan;*/
+        /*}*/
+
+
+        .child1 {
+            background-color: red; /* hex, rgba, rgb, hsl */
+        }
+
+        .child2 {
+            width: 100%;
+            height: 500px;
+            /*background-image: url("images/img.jpg");*/
+            /*background-size: contain;*/
+            /*background-position: center;*/
+            /*background-repeat: no-repeat;*/
+            /*background-attachment: fixed;*/
+            /*background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(images/img.jpg);*/
+            background-size: cover;
+            /*background-position: center;*/
+            /*background-repeat: no-repeat;*/
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(classwork/assets/img.jpg) no-repeat fixed center;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="parent">-->
+<!-- <div class="child1">test</div>-->
+<!-- <div class="child2">test</div>-->
+<!-- <div class="child3">test</div>-->
+<!--</div>-->
+
+<!-- Backgrounds -->
+<div>
+    <div class="child1">test</div>
+    <div class="child2">
+
+    </div>
+</div>
+</body>
+</html>
