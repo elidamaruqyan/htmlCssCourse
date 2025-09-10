@@ -30,12 +30,33 @@
     <button class="burger-menu"></button>
 </header>
 <main>
-    <section class="flex-center gap-16 hero-section">
-        <h3 class="hero-title">Welcome to </h3>
-        <h1 class="uppercase">Pato Place</h1>
-        <button type="button" class="primary-btn uppercase">
-            Look Menu
-        </button>
+    <section class="hero-section flex-center">
+        <div class="flex-column flex-center gap-16 relative slider">
+            <button class="flex-center slider__icon slider__icon--prev"> <</button>
+            <h3 class="hero-title">Welcome to </h3>
+            <h1 class="uppercase">Pato Place</h1>
+            <button type="button" class="primary-btn uppercase">
+                Look Menu
+            </button>
+            <button class="flex-center slider__icon slider__icon--next"> ></button>
+            <div class="flex-center gap-16 dots">
+                <button class="dots__icon"></button>
+                <button class="dots__icon"></button>
+                <button class="dots__icon"></button>
+            </div>
+        </div>
+    </section>
+    <section class="flex-center-between gap-32 card">
+        <div class="flex-column">
+            <em class="card--subtitle">Italian Restaurant</em>
+            <h2 class="card--title">Welcome</h2>
+            <p class="card--description">Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet
+                lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+            <a class="flex-center-between gap-16" href="#">Our Story <span> > </span> </a>
+        </div>
+        <div class="card-image">
+            <img src="assets/our-story.jpg" alt="Our Story" width="720" height="720">
+        </div>
     </section>
 </main>
 </body>

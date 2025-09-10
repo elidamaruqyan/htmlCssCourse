@@ -30,6 +30,7 @@ a {
 
 button {
     cursor: pointer;
+    border: 0;
 }
 
 /* Flex */
@@ -76,6 +77,15 @@ h3 {
 
 h4 {
     font-size: 2.5rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.relative {
+    position: relative;
 }
 
 .uppercase {
@@ -129,14 +139,68 @@ h4 {
 
 /*Hero Section*/
 .hero-section {
-    position: fixed;
-    inset: 0;
+    height: 100vh;
+    margin-top: -122px;
     background: url('../classwork/assets/banner.webp') no-repeat fixed center;
     background-size: cover;
-    height: 100vh;
-    flex-direction: column;
 }
 
 .hero-title {
     font-family: var(--font-secondary), serif;
+}
+
+/*Slider Icons*/
+.slider {
+    width: 100%;
+}
+
+.slider__icon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: 1000ms;
+}
+
+.slider__icon--prev {
+    left: 20px;
+}
+
+.slider__icon--next {
+    right: 20px;
+}
+
+.hero-section:hover .slider__icon {
+    opacity: 1;
+}
+
+.dots {
+    justify-self: flex-end;
+}
+
+.dots__icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #76768a;
+    transition: border .7s ease-out;
+}
+
+.dots__icon:hover {
+    border: 4px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+/* Our Story */
+.card {
+    margin: 100px 20px;
+}
+
+.card--subtitle {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
 }
