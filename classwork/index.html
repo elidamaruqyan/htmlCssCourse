@@ -11,51 +11,166 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<header class="flex-center-between gap-32 header">
-    <nav class="flex-center-between flex-fill">
-        <a href="">
-            <img src="assets/logo.png.webp" alt="Logo" height="50" width="110">
-        </a>
-        <ul class="flex-center-between gap-32">
-            <li><a href="#" target="_blank" class="nav-link">Home</a></li>
-            <li><a href="#" target="_blank" class="nav-link">Menu</a></li>
-            <li><a href="#" target="_blank" class="nav-link">Reservation</a></li>
-        </ul>
-        <ul class="flex-center-between gap-16">
-            <li><a href="#" class="nav-link">Twi</a></li>
-            <li><a href="#" class="nav-link">face</a></li>
-            <li><a href="#" class="nav-link">Twi</a></li>
-        </ul>
-    </nav>
-    <button class="burger-menu"></button>
+<header class="header">
+    <div class="container flex-center-between gap-32">
+        <nav class="flex-center-between flex-fill">
+            <a href="">
+                <img src="assets/logo.png.webp" alt="Logo" height="50" width="110">
+            </a>
+            <ul class="flex-center-between gap-32">
+                <li><a href="#" target="_blank" class="nav-link">Home</a></li>
+                <li><a href="#" target="_blank" class="nav-link">Menu</a></li>
+                <li><a href="#" target="_blank" class="nav-link">Reservation</a></li>
+            </ul>
+            <ul class="flex-center-between gap-16">
+                <li><a href="#" class="nav-link">Twi</a></li>
+                <li><a href="#" class="nav-link">face</a></li>
+                <li><a href="#" class="nav-link">Twi</a></li>
+            </ul>
+        </nav>
+        <button class="burger-menu"></button>
+    </div>
 </header>
 <main>
     <section class="hero-section flex-center">
         <div class="flex-column flex-center gap-16 relative slider">
-            <button class="flex-center slider__icon slider__icon--prev"> <</button>
-            <h3 class="hero-title">Welcome to </h3>
-            <h1 class="uppercase">Pato Place</h1>
-            <button type="button" class="primary-btn uppercase">
-                Look Menu
-            </button>
-            <button class="flex-center slider__icon slider__icon--next"> ></button>
-            <div class="flex-center gap-16 dots">
-                <button class="dots__icon"></button>
-                <button class="dots__icon"></button>
-                <button class="dots__icon"></button>
+            <div class="flex-column flex-center flex-fill">
+                <button class="flex-center slider__icon slider__icon--prev"> <</button>
+                <h2 class="hero-title">Welcome to </h2>
+                <h1 class="uppercase">Pato Place</h1>
+                <button type="button" class="primary-btn uppercase">
+                    Look Menu
+                </button>
+                <button class="flex-center slider__icon slider__icon--next"> ></button>
+            </div>
+            <ul class="flex-center gap-16 dots">
+                <li>
+                    <button type="button" class="dots__icon"></button>
+                </li>
+                <li>
+                    <button type="button" class="dots__icon"></button>
+                </li>
+                <li>
+                    <button type="button" class="dots__icon"></button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-container">
+        <div class="container flex-center-between gap-64 flex-wrap">
+            <div class="flex-column flex-center flex-fill">
+                <em class="section--subtitle">Italian Restaurant</em>
+                <h2>Welcome</h2>
+                <p class="card--description">Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed
+                    fringilla,
+                    nunc sed imperdiet
+                    lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+                <a class="flex gap-16 section--link" href="#">Our Story <span> > </span> </a>
+            </div>
+            <div class="scalable-image flex-fill card--image">
+                <img src="assets/our-story.jpg" alt="Our Story" width="390" height="390" class="image">
             </div>
         </div>
     </section>
-    <section class="flex-center-between gap-32 card">
-        <div class="flex-column">
-            <em class="card--subtitle">Italian Restaurant</em>
-            <h2 class="card--title">Welcome</h2>
-            <p class="card--description">Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet
-                lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
-            <a class="flex-center-between gap-16" href="#">Our Story <span> > </span> </a>
+    <section class="flex-column flex-center parallax">
+        <em class="section--subtitle">Discover</em>
+        <h2>Pato Place</h2>
+    </section>
+    <section class="cards">
+        <div class="container">
+            <ul class="flex-center-between flex-wrap gap-16">
+                <li class="cards--item">
+                    <figure class="flex-column flex-center">
+                        <div class="scalable-image">
+                            <img src="assets/card.webp" alt="Our Story" width="720" height="720" class="image">
+                        </div>
+                        <figcaption class="caption">
+                            <h3 class="cards--item--title">Romantic Restaurant</h3>
+                            <p class="cards--item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Accusantium adipisci asperiores
+                                debitis dolorem in ipsa optio ratione temporibus velit. Eaque esse facere, itaque iure
+                                praesentium quasi saepe tempore vel voluptas?
+                            </p>
+                            <a class="flex gap-16 section--link" href="#">Our Story <span> > </span> </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="cards--item">
+                    <figure class="flex-column flex-center">
+                        <div class="scalable-image ">
+                            <img src="assets/card.webp" alt="Our Story" width="720" height="720" class="image">
+                        </div>
+                        <figcaption class="caption">
+                            <h3 class="cards--item--title">Romantic Restaurant</h3>
+                            <p class="cards--item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Accusantium adipisci asperiores
+                                debitis dolorem in ipsa optio ratione temporibus velit. Eaque esse facere, itaque iure
+                                praesentium quasi saepe tempore vel voluptas?
+                            </p>
+                            <a class="flex gap-16 section--link" href="#">Our Story <span> > </span> </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="cards--item">
+                    <figure class="flex-column flex-center">
+                        <div class="scalable-image">
+                            <img src="assets/card.webp" alt="Our Story" width="720" height="720" class="image">
+                        </div>
+                        <figcaption class="caption">
+                            <h3 class="cards--item--title">Romantic Restaurant</h3>
+                            <p class="cards--item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Accusantium adipisci asperiores
+                                debitis dolorem in ipsa optio ratione temporibus velit. Eaque esse facere, itaque iure
+                                praesentium quasi saepe tempore vel voluptas?
+                            </p>
+                            <a class="flex gap-16 section--link" href="#">Our Story <span> > </span> </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
         </div>
-        <div class="card-image">
-            <img src="assets/our-story.jpg" alt="Our Story" width="720" height="720">
+    </section>
+
+    <section class="section-container">
+        <em class="section--subtitle">Discover</em>
+        <h2>Our Menu </h2>
+        <div class="masonry">
+            <div class="masonry-item lunch">
+                <div class="scalable-image">
+                    <img src="assets/lunch.webp" alt="Lunch" width="720" height="720">
+                </div>
+                <button class="masonry-item-btn">Lunch</button>
+            </div>
+            <div class="masonry-item dinner">
+                <div class="scalable-image">
+                    <img src="assets/lunch.webp" alt="Lunch" width="720" height="720">
+                </div>
+                <button class="masonry-item-btn">Dinner</button>
+            </div>
+            <div class="masonry-item drink">
+                <div class="scalable-image">
+                    <img src="assets/lunch.webp" alt="Lunch" width="720" height="720">
+                </div>
+                <button class="masonry-item-btn">Drink</button>
+            </div>
+            <div class="masonry-item starters">
+                <div class="scalable-image">
+                    <img src="assets/lunch.webp" alt="Lunch" width="720" height="720">
+                </div>
+                <button class="masonry-item-btn">starters</button>
+            </div>
+            <div class="masonry-item happy-hour">
+                <div class="scalable-image">
+                    <img src="assets/happyHour.webp" alt="Lunch" width="720" height="720">
+                </div>
+                <button class="masonry-item-btn">Happy Hour</button>
+            </div>
+            <div class="masonry-item dessert">
+                <div class="scalable-image">
+                    <img src="assets/lunch.webp" alt="Lunch" width="720" height="720">
+                </div>
+                <button class="masonry-item-btn">Dessert</button>
+            </div>
         </div>
     </section>
 </main>
