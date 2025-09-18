@@ -111,6 +111,7 @@ h4 {
 }
 
 img {
+    max-width: 100%;
     width: 100%;
     height: 100%;
     display: block;
@@ -167,6 +168,10 @@ img {
 
 .scalable-image:hover img {
     transform: scale(1.1);
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* Header */
@@ -264,6 +269,7 @@ img {
 /* Our Story */
 .card--image {
     max-width: 390px;
+    min-width: 250px;
     aspect-ratio: 1 / 1;
 }
 
@@ -360,4 +366,51 @@ img {
 .masonry-item-btn:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+/* Events */
+.events {
+    padding: 100px 0;
+    background-image: url('../classwork/assets/bg-event-02.jpg.webp');
+}
+
+.event-card {
+    margin-top: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    color: var(--max-natural-color);
+}
+
+.event-caption {
+    padding: 60px 40px;
+}
+
+.event-date {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time {
+    writing-mode: vertical-rl;
+}
+
+.timer-wrapper {
+    margin: 40px 0;
+}
+
+.timer {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.timer span {
+    text-transform: uppercase;
+    color: #666666;
+    font-size: 0.8rem;
 }
