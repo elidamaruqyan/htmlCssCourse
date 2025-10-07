@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/3ad96045dd.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -203,6 +204,128 @@
             </figure>
         </div>
     </section>
+    <section class="section-container section--subtitle__dark">
+        <div class="container flex-center-between gap-64 flex-wrap margin-left-unset">
+            <div class="flex-twice">
+                <em class="section--subtitle">Reservations</em>
+                <h3 class="uppercase">Book Table </h3>
+                <form action="" class="flex flex-wrap form flex-center">
+                    <label for="date" class="flex-column flex-fill">
+                        Date
+                        <input class="form-item" id="date" name="date" type="date" value="2018-07-22"
+                               placeholder="Date">
+                    </label>
+                    <label for="name" class="flex-column flex-fill">
+                        Name
+                        <input class="form-item" id="name" name="name" type="text" placeholder="Name">
+                    </label>
+                    <label for="time" class="flex-column flex-fill">
+                        Time
+                        <input class="form-item" id="time" name="time" type="time" value="09:30:00" placeholder="Time">
+                    </label>
+                    <label for="phone" class="flex-column flex-fill">
+                        Phone
+                        <input class="form-item" id="phone" name="phone" type="tel" placeholder="Phone">
+                    </label>
+                    <label for="people" class="flex-column flex-fill">
+                        People
+                        <select class="form-item" name="people" id="people">
+                            <option value="" disabled selected>Choose your option</option>
+                        </select>
+                    </label>
+                    <label for="email" class="flex-column flex-fill">
+                        Email
+                        <input class="form-item" type="email" name="email" id="email" placeholder="Email">
+                    </label>
+
+                    <button type="submit" class="secondary-button">
+                        Book Table
+                    </button>
+                </form>
+            </div>
+            <div class="scalable-image flex-fill card--image">
+                <img src="assets/our-story.jpg" alt="Our Story" width="390" height="390" class="image">
+            </div>
+        </div>
+    </section>
+    <section class="review-container slider flex-column flex-center">
+        <em class="section--subtitle">Customers Say</em>
+        <h3 class="uppercase section--subtitle__dark">Review</h3>
+        <div class="relative review--card">
+            <button class="flex-center slider__icon slider__icon--prev"> <</button>
+            <figure class="flex-column flex-center">
+                <div class="image-wrapper">
+                    <img src="assets/avatar.jpg" alt="Avatar" width="320" height="320">
+                </div>
+                <figcaption class="flex-column  flex-center gap-16 review--info text-center">
+                    <p>
+                        We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis
+                        in pre-tium nec, fermentum viverra dui ”
+                    </p>
+                    <div class="flex stars-wrapper">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <address> Marie Simmons - New York</address>
+                </figcaption>
+            </figure>
+            <button class="flex-center slider__icon slider__icon--next"> ></button>
+        </div>
+        <ul class="flex-center gap-16 dots review--dots">
+            <li>
+                <button type="button" class="dots__icon"></button>
+            </li>
+            <li>
+                <button type="button" class="dots__icon"></button>
+            </li>
+            <li>
+                <button type="button" class="dots__icon"></button>
+            </li>
+        </ul>
+    </section>
+    <section class="flex-column flex-center parallax">
+        <em class="section--subtitle">Discover</em>
+        <h2>Our Video</h2>
+        <button class="play-btn flex flex-center">
+            <i class="fa-solid fa-video"></i>
+        </button>
+    </section>
+
+    <section class="sign-up section-container">
+        <div class="container flex flex-center">
+            <form action="" class="flex gap-16">
+                <h4>
+                    Specials Sign up
+                </h4>
+                <label for="emailAddress" class="relative input-label">
+                    <input type="email" placeholder="Email Address" name="email" id="emailAddress"
+                           class="form-item sign-up__input">
+                    <span class="absolute input-icon">
+                 <i class="fa-solid fa-envelope"></i>
+                </span>
+                </label>
+                <button type="submit" class="secondary-button self-center">
+                    Sign Up
+                </button>
+            </form>
+        </div>
+    </section>
+    <!--    <div class="modal-container flex-column">-->
+    <!--        <button type="button" class="close-modal" aria-label="close modal">-->
+    <!--                X-->
+    <!--            </button>-->
+    <!--        <div class="modal-content">-->
+    <!--            <iframe width="560" height="315" src="https://www.youtube.com/embed/5k1hSu2gdKE?si=nmcb3hlKD5LtAgD1"-->
+    <!--                    title="YouTube video player" frameborder="0"-->
+    <!--                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
+    <!--                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>-->
+
+    <!--            </iframe>-->
+    <!--        </div>-->
+    <!--    </div>-->
 </main>
 </body>
 </html>
