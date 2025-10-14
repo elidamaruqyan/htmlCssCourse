@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*@media print {*/
+        /*    body {*/
+        /*        background-color: red;*/
+        /*    }*/
+        /*}*/
+
+        /*@media screen and (orientation: landscape) {*/
+        /*    body {*/
+        /*        background-color: green;*/
+        /*    }*/
+        /*}*/
+
+        /*@media screen and (orientation: portrait) {*/
+        /*    body {*/
+        /*        background-color: blue;*/
+        /*    }*/
+        /*}*/
+
+        /*@media (resolution: 300dpi) {*/
+        /*    body {*/
+        /*        background-color: lightgreen;*/
+        /*    }*/
+        /*}*/
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 12px;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                width: 992px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                width: 768px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .container {
+                width: 640px;
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            .container {
+                width: auto;
+            }
+        }
+
+        @media (max-height: 200px) and (min-width: 400px) {
+            .container {
+                background-color: lightgray;
+            }
+        }
+
+        .img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .item {
+            width: clamp(200px, 5vw, 500px);
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa, cum exercitationem expedita
+            explicabo
+            harum,
+            iste, nobis non odit quam quidem quo quos suscipit temporibus velit voluptas voluptate. Fugiat, quo.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut autem dignissimos doloribus
+            excepturi
+            fugiat nulla quod ullam vel voluptates! Facilis itaque necessitatibus quis veritatis voluptatibus! Nam odio
+            praesentium quam
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at blanditiis cupiditate est, ex,
+            expedita illum incidunt iste nemo nobis nostrum obcaecati officia quam quas quibusdam quis reiciendis sunt
+            unde?
+            .
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
