@@ -6,11 +6,23 @@
     --secondary-color: rgb(236, 29, 37);
     --max-natural-color: #000000;
     --transition: 800ms;
+
+    /* Breakpoint variables */
+    --breakpoint-xs: 0px; /* Extra small (phones) */
+    --breakpoint-sm: 576px; /* Small (phones to tablets) */
+    --breakpoint-md: 768px; /* Medium (tablets) */
+    --breakpoint-lg: 992px; /* Large (desktops) */
+    --breakpoint-xl: 1200px; /* Extra large (large desktops) */
+}
+
+/* set root font-size (affects rem units) */
+html {
+    font-size: 16px; /* 16px */
 }
 
 body {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--primary-color);
 }
 
@@ -42,6 +54,7 @@ button {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding-inline: 24px;
 }
 
 .section-container {
@@ -212,6 +225,32 @@ img {
     z-index: 1;
     border-top: 4px solid var(--secondary-color);
     padding: 2rem 0;
+    min-height: 118px;
+}
+
+/* Mobile Sidebar */
+.mb-sidebar {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.59);
+    z-index: 2;
+}
+
+.aside-sidebar {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 390px;
+    padding: 100px 60px 60px;
+}
+
+.sidebar-btn {
+    margin-top: 24px;
+}
+
+.gallery {
+    margin-top: 80px;
 }
 
 .nav-link {
@@ -240,13 +279,18 @@ img {
 /*Hero Section*/
 .hero-section {
     height: 100vh;
-    margin-top: -122px;
+    margin-top: -118px;
     background: url('../classwork/assets/banner.webp') no-repeat fixed center;
     background-size: cover;
 }
 
 .hero-title {
     font-family: var(--font-secondary), serif;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    margin-bottom: 37px;
 }
 
 /*Slider Icons*/
@@ -464,6 +508,10 @@ img {
     color: var(--max-natural-color);
 }
 
+.half-width {
+    min-width: 50%;
+}
+
 .form {
     gap: 16px;
     color: #a1a1a1;
@@ -471,8 +519,7 @@ img {
 }
 
 .form label {
-    width: 50%;
-    min-width: calc(50% - 8px);
+    width: calc(50% - 8px);
     gap: 8px;
 }
 
@@ -612,6 +659,10 @@ img {
     font-weight: 500;
     color: var(--primary-color);
     line-height: 1.2;
+
+    &.dark {
+        color: black;
+    }
 }
 
 .about-us-section-item-description {
@@ -672,5 +723,78 @@ img {
     to {
         /*opacity: 1;*/
         transform: translateY(0);
+    }
+}
+
+/* large first, small last (so smaller breakpoints override) */
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+
+    .mb-hide {
+        display: none;
+    }
+
+    .flex-column-mb {
+        flex-direction: column;
+    }
+
+    .event-date {
+        width: 100%;
+        position: absolute;
+        height: 46px;
+        background: #ff0000a8;
+    }
+
+    .time {
+        writing-mode: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+
+    .scalable-image {
+        margin: 0 auto;
+    }
+
+    .cards--item {
+        flex: 0 0 100%;
+    }
+
+    .masonry {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-auto-rows: 150px;
+        grid-template-areas:
+        "lunch dinner"
+        "lunch dinner"
+        "drink drink"
+        "happyHour happyHour"
+        "starters starters"
+        "dessert dessert";
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 10px;
+    }
+
+    .section-container {
+        padding-inline: 0;
+    }
+
+    .masonry {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form label {
+        min-width: 100%;
     }
 }
