@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@import "./base/_global.css";
+@import "./base/_reset.css";
+@import "./components/_button.css";
+@import "./components/_card.css";
+@import "./layout/_header.css";
+@import "./layout/_footer.css";
+
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.hero-section {
+    background-image: url("../../src/assets/images/hero-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
