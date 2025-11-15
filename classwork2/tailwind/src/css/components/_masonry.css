@@ -72,7 +72,59 @@
     height: 100vh;
 }
 
-.test {
+/*.sq__item {*/
+/*    position: relative;*/
+/*    background: darkblue;*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    transform: rotate(45deg);*/
+/*}*/
+
+/*.sq__item:nth-child(2n) {*/
+/*    margin-top: -300px;*/
+/*}*/
+
+/*.sq__item::after {*/
+/*    position: absolute;*/
+/*    content: '';*/
+/*    display: block;*/
+/*    width: 242%;*/
+/*    height: 242%;*/
+/*    border: 1px solid red;*/
+/*}*/
+
+/*.sq__item:nth-child(odd)::after {*/
+/*    border-bottom: 0;*/
+/*    border-right: 0;*/
+/*}*/
+
+/*.sq__item:nth-child(even)::after {*/
+/*    border-top: 0;*/
+/*    border-left: 0;*/
+/*}*/
+
+/*.test1::after {*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*}*/
+
+/*.test2::after {*/
+/*    bottom: -48px;*/
+/*    right: -48px;*/
+/*}*/
+
+/*.test3::after {*/
+/*    left: -48px;*/
+/*    top: -48px;*/
+/*}*/
+
+/*.test4:after {*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*}*/
+
+
+.sq__item {
     position: relative;
     background: darkblue;
     width: 200px;
@@ -80,11 +132,11 @@
     transform: rotate(45deg);
 }
 
-.test2, .test4 {
+.sq__item:nth-child(2n) {
     margin-top: -300px;
 }
 
-.test::after {
+.sq__item::after {
     position: absolute;
     content: '';
     display: block;
@@ -93,33 +145,32 @@
     border: 1px solid red;
 }
 
-.test1::after, .test3::after {
+.sq__item:nth-child(odd)::after {
     border-bottom: 0;
     border-right: 0;
 }
 
-.test2::after, .test4::after {
+.sq__item:nth-child(even)::after {
     border-top: 0;
     border-left: 0;
 }
 
-.test.test1::after {
+.sq__item:nth-child(4n + 1)::after {
     bottom: 0;
     left: 0;
-
 }
 
-.test.test2::after {
+.sq__item:nth-child(4n + 2)::after {
     bottom: -48px;
     right: -48px;
 }
 
-.test.test3::after {
-    left: -48px;
+.sq__item:nth-child(4n + 3)::after {
     top: -48px;
+    left: -48px;
 }
 
-.test.test4:after {
+.sq__item:nth-child(4n + 4)::after {
     top: 0;
     right: 0;
 }
@@ -130,13 +181,11 @@
 }
 
 .flex-column {
-    display: flex;
     flex-direction: column;
 }
 
 .squares-wrapper {
     display: flex;
-    flex-direction: row;
     gap: 80px;
 }
 
@@ -146,12 +195,6 @@
 
 .squares-wrapper-second {
     margin-top: -85px;
-}
-
-.squares {
-    display: flex;
-    justify-content: center;
-
 }
 
 .square {
